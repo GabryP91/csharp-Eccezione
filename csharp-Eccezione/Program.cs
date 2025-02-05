@@ -97,6 +97,7 @@ namespace csharp_Eccezione
                         // Stampa media voti
                         Console.WriteLine("\nMedia voti studente 1: " + s1.CalcolaMediaVoti());
                         Console.WriteLine("\nMedia voti studente 2: " + s2.CalcolaMediaVoti());
+                        Console.WriteLine("\nMedia voti studente 4: " + s4.CalcolaMediaVoti());
 
                         // Confronto iscrizione
                         Studente piuVecchio = Studente.ConfrontaIscrizione(s1, s2);
