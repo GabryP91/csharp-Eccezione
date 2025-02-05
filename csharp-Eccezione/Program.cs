@@ -87,6 +87,8 @@ namespace csharp_Eccezione
                         Studente s3 = new Studente(150, new DateTime(2021, 9, 1), new int[] { 30, 29, 27,22,25 });
                         Studente s4 = new Studente(90, new DateTime(2013, 5, 3), new int[] {});
 
+                        Studente s5 = new Studente(); // Studente senza parametri;
+
                         // Stampa numero totale di studenti iscritti
                         Console.WriteLine("\nNumero totale di studenti iscritti: " + Studente.GetNumeroTotaleStudenti());
 
@@ -98,6 +100,7 @@ namespace csharp_Eccezione
                         Console.WriteLine("\nMedia voti studente 1: " + s1.CalcolaMediaVoti());
                         Console.WriteLine("\nMedia voti studente 2: " + s2.CalcolaMediaVoti());
                         Console.WriteLine("\nMedia voti studente 4: " + s4.CalcolaMediaVoti());
+                        Console.WriteLine("\nMedia voti studente 5: " + s5.CalcolaMediaVoti());
 
                         // Confronto iscrizione
                         Studente piuVecchio = Studente.ConfrontaIscrizione(s1, s2);
