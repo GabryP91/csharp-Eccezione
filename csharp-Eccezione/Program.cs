@@ -187,7 +187,7 @@ namespace csharp_Eccezione
                             Console.Write("Inserisci un numero decimale: ");
                             string input = Console.ReadLine();
 
-                            if (!double.TryParse(input, out double numero))
+                            if (!double.TryParse(input, out double numero) || numero == Math.Floor(numero))
                             {
                                 throw new InputNonValidoException();
                             }
