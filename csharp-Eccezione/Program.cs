@@ -294,7 +294,7 @@ namespace csharp_Eccezione
         public InputNonValidoException() : base("Errore: Il valore inserito non è un numero valido.") { }
     }
 
-    // Classe personalizzata per gestire l'errore di conversione
+    // Classe personalizzata per gestire l'errore accesso oltre il limite dell'array
     public class FuoriArrayException : Exception
     {
         public FuoriArrayException() : base("Errore: L'array non contiene abbastanza elementi.Versione personalizzata") { }
